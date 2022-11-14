@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import React from 'react'
 import Visualizer from './visualizer/visualizer'
 import './App.css';
 
@@ -11,3 +11,6 @@ function App() {
 }
 
 export default App;
+
+
+

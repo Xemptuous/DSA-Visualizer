@@ -1,6 +1,18 @@
+.main-container {
+  top: 10px;
+}
+
 .array-container {
   position: absolute;
-  left: 100px;
+  top: 20px;
+  bottom: 125px;
+  width: 95vw;
+}
+
+.button-container {
+  position: absolute;
+  width: 95vw;
+  bottom: 5px;
 }
 
 .array-bar {
