@@ -1,5 +1,5 @@
 import React from 'react';
-import Tracker from '../sorting_algorithms/sorting_algorithms.js'
+import MergeSorter from '../sorting_algorithms/sorting_algorithms.js'
 import './visualizer.css';
 
 export default class Visualizer extends React.Component {
@@ -28,7 +28,7 @@ export default class Visualizer extends React.Component {
 
   mergeSort() {
     // testSortingAlgorithms();
-    let tracker = new Tracker(this.state.array)
+    let tracker = new MergeSorter(this.state.array)
     tracker.mergeSort();
     let animations = tracker.animations;
 
@@ -117,7 +117,7 @@ function testSortingAlgorithms() {
       array.push(randomInt(-1000, 1000));
     }
     let jsSortedArray = array.slice().sort((a,b) => a - b);
-    let tracker = new Tracker(array);
+    let tracker = new MergeSorter(array);
     tracker.mergeSort();
     let mergeSortedArray = tracker.sortedArray;
     console.log(arraysAreEqual(jsSortedArray, mergeSortedArray));

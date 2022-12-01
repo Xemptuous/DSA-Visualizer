@@ -1,4 +1,4 @@
-export default class Tracker {
+export default class MergeSorter {
   constructor(arr) {
     this.originalArray = arr;
     this.sortedArray = [];
